@@ -1,0 +1,15 @@
+paths:
+  image_dir: "/home/ijh/combined/CENTRALCITY_EVMONITORING/MISRECOG/"
+  json_dir: "/home/ijh/combined/CENTRALCITY_EVMONITORING/MISRECOG_JSON/"
+  results_dir: "results"
+  models_dir: "src/models"
+  logs_dir: "logs"
+
+model:
+  xgb_path: "src/models/xgb_model.pkl"
+  lgbm_path: "src/models/lgbm_model.pkl"
+
+processing:
+  image_size: [320, 180]
+  confidence_threshold: 0.45
+  batch_size: 100 
