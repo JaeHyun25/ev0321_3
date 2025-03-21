@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -21,16 +20,10 @@ wheels/
 .installed.cfg
 *.egg
 
-# 가상환경
+# Virtual Environment
 venv/
+env/
 ENV/
-bin/
-include/
-lib/
-lib64/
-pyvenv.cfg
-pip-log.txt
-pip-delete-this-directory.txt
 
 # IDE
 .idea/
@@ -38,11 +31,37 @@ pip-delete-this-directory.txt
 *.swp
 *.swo
 
-# 프로젝트 특정
+# Logs
 logs/
-results/
-models/
+*.log
+
+# Model files
 *.pkl
+*.h5
+*.pth
+*.onnx
+
+# Data
+error_cases/
+uncertain_cases/
+results/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local development settings
+.env
+.env.local
+
+# 가상환경
+bin/
+include/
+pyvenv.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 프로젝트 특정
+models/
 *.joblib
 *.tflite
 *.db
@@ -60,14 +79,9 @@ models/
 
 # 노트북 파일
 *.ipynb
-.ipynb_checkpoints/
-
-# 로그 파일
-*.log
 
 # 기타 임시 파일
 *.tmp
 *.bak
-*.swp
 *~
 .DS_Store 
