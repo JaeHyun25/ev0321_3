@@ -35,12 +35,6 @@ ENV/
 logs/
 *.log
 
-# Model files
-*.pkl
-*.h5
-*.pth
-*.onnx
-
 # Data
 error_cases/
 uncertain_cases/
@@ -60,6 +54,18 @@ pyvenv.cfg
 pip-log.txt
 pip-delete-this-directory.txt
 
+# 기타 임시 파일
+*.tmp
+*.bak
+*~
+.DS_Store
+
+# Model files
+*.pkl
+*.h5
+*.pth
+*.onnx
+
 # 프로젝트 특정
 models/
 *.joblib
@@ -78,10 +84,4 @@ models/
 *.bmp
 
 # 노트북 파일
-*.ipynb
-
-# 기타 임시 파일
-*.tmp
-*.bak
-*~
-.DS_Store 
+*.ipynb 
